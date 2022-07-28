@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 
   return {
     // false - 모든 지원되는 meetup value를 포함하라는 뜻
-    fallback: false,
+    fallback: "blocking",
     paths: meetups.map((meetup) => ({
       params: { meetUpID: meetup._id.toString() },
     })),
