@@ -43,7 +43,7 @@ export async function getStaticProps() {
     // 이 페이지를 다시 생성할 때까지 대기하는 시간을 초단위로 표시한 것.
     // 3600 = 1h
     // 설정한 초마다 페이지가 생성&대체됨
-    revalidate: 10,
+    revalidate: 1,
   };
 }
 
